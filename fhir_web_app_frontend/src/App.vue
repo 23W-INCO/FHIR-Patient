@@ -105,7 +105,7 @@ export default {
     async fetchPatients() {
       try {
         await axios
-          .get("api/patients")
+          .get("/api/patients")
           .then((success) => {
             console.log("Successful request to FHIR server");
             console.log(success);
